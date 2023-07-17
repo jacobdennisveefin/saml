@@ -195,8 +195,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\SAMLEventServiceProvier::class,
-        Aacotroneo\Saml2\Saml2ServiceProvider::class,
-
+        Aacotroneo\Saml2\Saml2ServiceProvider::class,        
+        Orchestra\Parser\XmlServiceProvider::class,
     ],
 
     /*
@@ -212,7 +212,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'Saml2' => 'Aacotroneo\Saml2\Facades\Saml2Auth',
+        'Saml2' => Aacotroneo\Saml2\Facades\Saml2Auth::class,
+        'XmlParser' => Orchestra\Parser\Xml\Facade::class,
     ])->toArray(),
 
 ];
