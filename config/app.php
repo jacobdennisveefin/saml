@@ -194,7 +194,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\SAMLEventServiceProvier::class,
         Aacotroneo\Saml2\Saml2ServiceProvider::class,
 
     ],
