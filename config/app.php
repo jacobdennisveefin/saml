@@ -212,6 +212,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Saml2' => 'Aacotroneo\Saml2\Facades\Saml2Auth',
     ])->toArray(),
 
 ];
