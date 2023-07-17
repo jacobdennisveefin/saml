@@ -10,7 +10,7 @@ class SamlController extends Controller
 {
     public function acs()
     {
-        dd(Saml2User);
-        // dd(request()->all());
+     //   dd(Saml2User);
+        dd(request()->all());
     }
 }
