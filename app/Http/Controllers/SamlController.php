@@ -25,6 +25,7 @@ class SamlController extends Controller
                 $attrArr[$attr->getAttribute('Name')] = $value->textContent;
             }
             $globalAttrArr[$attr] = $attrArr;
+            dd($attrArr);
         }
         dd($globalAttrArr);
         
