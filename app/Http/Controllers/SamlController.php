@@ -8,6 +8,6 @@ class SamlController extends Saml2Controller
 {
     public function login()
     {
-        
+        dd(request()->all());
     }
 }
