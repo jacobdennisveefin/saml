@@ -7,7 +7,7 @@ use Aacotroneo\Saml2\Saml2Auth;
 
 class SamlController extends Controller
 {
-    public function login()
+    public function acs()
     {
         dd(request()->all());
     }
