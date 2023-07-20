@@ -6,11 +6,21 @@ use Illuminate\Http\Request;
 use Aacotroneo\Saml2\Saml2Auth;
 use Aacotroneo\Saml2\Saml2User;
 use DOMDocument;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Storage;
 use XMLParser;
 
 class SamlController extends Controller
 {
-    public function acs()
+    public function SPMetaData(){
+        $fileUrl = asset('SAML/metadata/metaData.xml');
+        // $file = File::get($file);
+        // $response = Response::make($file, 200);
+        // $response->header('Content-Type', 'application/xml');
+        return redirect()->to($fileUrl);
+    }
+    public function SAMLAssertion()
     {
         $dom = new \DOMDocument();
         $dom->loadXML(base64_decode(request()->get('SAMLResponse')));
@@ -29,5 +39,9 @@ class SamlController extends Controller
         }
         dd($globalAttrArr);
         
+    }
+
+    public function SamlLogoutService(){
+
     }
 }

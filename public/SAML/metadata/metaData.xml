@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2023-07-22T08:23:37Z" cacheDuration="PT604800S" entityID="https://laravel-sp.fsdevtutor.shop/sp">
+  <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDDDCCAnWgAwIBAgIBADANBgkqhkiG9w0BAQ0FADCBojELMAkGA1UEBhMCaW4xETAPBgNVBAgMCEthcm5hdGFrMRMwEQYDVQQKDApGU0RldlR1dG9yMRgwFgYDVQQDDA9mc2RldnR1dG9yLnNob3AxEjAQBgNVBAcMCUJhbmdhbG9yZTETMBEGA1UECwwKTGFyYXZlbCBTUDEoMCYGCSqGSIb3DQEJARYZZGV2ZWxvcGVyQGZzZGV2dHV0b3Iuc2hvcDAeFw0yMzA3MjAwNzI5MjJaFw0yNDA3MTkwNzI5MjJaMIGiMQswCQYDVQQGEwJpbjERMA8GA1UECAwIS2FybmF0YWsxEzARBgNVBAoMCkZTRGV2VHV0b3IxGDAWBgNVBAMMD2ZzZGV2dHV0b3Iuc2hvcDESMBAGA1UEBwwJQmFuZ2Fsb3JlMRMwEQYDVQQLDApMYXJhdmVsIFNQMSgwJgYJKoZIhvcNAQkBFhlkZXZlbG9wZXJAZnNkZXZ0dXRvci5zaG9wMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+1rdDX2VNOEfoYltovEdhGBuQm/a+Y6HJurDtEzw+XL+Dia5mxQ8Mm1FA15DdNCHFph2/NQYYR1B22grwNgk5LA8Uq4Tk89znr6SFDWHPTUuEWfSzi5dYUjuxsEFEtFv0gmwulyhhstEu/T/uBzHpDIawZh/PDR5ArbEGQPhY5QIDAQABo1AwTjAdBgNVHQ4EFgQUS1zicCKnBKvJ9Ed2U5H1Vxe4iZUwHwYDVR0jBBgwFoAUS1zicCKnBKvJ9Ed2U5H1Vxe4iZUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOBgQCqqwpB2uUoRFZ0J5DAZy41fx2WgMT5x6HtQjkeBSe1JrfjDLIQ0Ej3mVqKEgMFk0yc0NpMSF+6p38T0DWa9j74ss8M32TG3T996uSIdUICwrdqoXP4szF7seMjaOHBn0wAmeIJsA0FC05sqMD0bv0q6rfiMZNg3tnoBqSxtUFGuA==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDDDCCAnWgAwIBAgIBADANBgkqhkiG9w0BAQ0FADCBojELMAkGA1UEBhMCaW4xETAPBgNVBAgMCEthcm5hdGFrMRMwEQYDVQQKDApGU0RldlR1dG9yMRgwFgYDVQQDDA9mc2RldnR1dG9yLnNob3AxEjAQBgNVBAcMCUJhbmdhbG9yZTETMBEGA1UECwwKTGFyYXZlbCBTUDEoMCYGCSqGSIb3DQEJARYZZGV2ZWxvcGVyQGZzZGV2dHV0b3Iuc2hvcDAeFw0yMzA3MjAwNzI5MjJaFw0yNDA3MTkwNzI5MjJaMIGiMQswCQYDVQQGEwJpbjERMA8GA1UECAwIS2FybmF0YWsxEzARBgNVBAoMCkZTRGV2VHV0b3IxGDAWBgNVBAMMD2ZzZGV2dHV0b3Iuc2hvcDESMBAGA1UEBwwJQmFuZ2Fsb3JlMRMwEQYDVQQLDApMYXJhdmVsIFNQMSgwJgYJKoZIhvcNAQkBFhlkZXZlbG9wZXJAZnNkZXZ0dXRvci5zaG9wMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+1rdDX2VNOEfoYltovEdhGBuQm/a+Y6HJurDtEzw+XL+Dia5mxQ8Mm1FA15DdNCHFph2/NQYYR1B22grwNgk5LA8Uq4Tk89znr6SFDWHPTUuEWfSzi5dYUjuxsEFEtFv0gmwulyhhstEu/T/uBzHpDIawZh/PDR5ArbEGQPhY5QIDAQABo1AwTjAdBgNVHQ4EFgQUS1zicCKnBKvJ9Ed2U5H1Vxe4iZUwHwYDVR0jBBgwFoAUS1zicCKnBKvJ9Ed2U5H1Vxe4iZUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOBgQCqqwpB2uUoRFZ0J5DAZy41fx2WgMT5x6HtQjkeBSe1JrfjDLIQ0Ej3mVqKEgMFk0yc0NpMSF+6p38T0DWa9j74ss8M32TG3T996uSIdUICwrdqoXP4szF7seMjaOHBn0wAmeIJsA0FC05sqMD0bv0q6rfiMZNg3tnoBqSxtUFGuA==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://laravel-sp.fsdevtutor.shop/sp/sls"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://laravel-sp.fsdevtutor.shop/sp/acs" index="1"/>
+  </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en-US">FSDevtutor</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en-US">FSDevtutor</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en-US">https://fsdevtutor.shop</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Developer</md:GivenName>
+    <md:EmailAddress>developer@fsdevtutor.shop</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:GivenName>Developer</md:GivenName>
+    <md:EmailAddress>developer@fsdevtutor.shop</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>

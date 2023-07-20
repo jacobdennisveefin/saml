@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SamlController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     dd(request()->all());
     //return view('welcome');
+});
+
+//Custom SAML Routes
+Route::prefix('saml/sp')->group(function(){
+    //Metadata Endpoint
+    Route::get('metadata',[SamlController::class,'SPMetaData'])->name('saml.sp.metadata');
+    //Acsertion Endpoint
+    Route::post('acs',[SamlController::class,'SamlAssertion'])->name('saml.sp.acs');
+    //SSO Logout Service Endpoint
+    Route::get('sls',[SamlController::class,'SamlLogoutService'])->name('saml.sp.sls');
 });
